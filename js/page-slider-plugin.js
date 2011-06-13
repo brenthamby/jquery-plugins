@@ -1,7 +1,6 @@
 /**
- * This is a jquery slider plugin that allows you to 
- * 
- *
+ * This is a jquery slider plugin is a simple interface for adding an
+ * animated carousel for paging.
  */
 
 (function( $ ){
