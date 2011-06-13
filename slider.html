@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+        <script type="text/javascript" src="js/page-slider-plugin.js"></script>
+        <style>
+            body{
+                font-family: sans-serif;
+                background-color: #99A2B2;
+                color:#fff;
+            }
+            h2{
+                padding:10px;
+            }
+            #pages{
+                height:300px;
+                width:800px;
+                border:1px solid #eee;
+                background-color: #687899;
+            }
+            input{
+                background-color: #687899;
+                color:#fff;
+                border-radius:4px;
+                padding:4px;
+                font-size: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>simple jquery plugin for animating page transitions in carousel fashion</h1>
+        <hr/>
+        <br>
+        <input id="prev" type="button" value="prev">
+        <input id="next" type="button" value="next">
+        <span id="page">paging</span>
+        <br/><br/>
+        <div id="pages">
+            <div style="padding:10px"><h2>1</h2>
+                <div style="padding:40px">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </div>
+            </div>
+            <div><h2>2</h2>
+                <div style="padding:40px">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </div>
+            </div>
+            <div><h2>3</h2>
+                <div style="padding:40px">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </div>
+            </div>
+            <div><h2>4</h2>
+                <div style="padding:40px">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </div>
+            </div>
+            <div><h2>5</h2>
+                <div style="padding:40px">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </div>
+            </div>
+            <div><h2>6</h2>
+                <div style="padding:40px">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(window).load(function(){
+                $("#pages").slide({foo:'brent'});
+                $("#next").click(function(){
+                    $("#pages").slide('next');
+                })
+                $("#prev").click(function(){
+                    $("#pages").slide('prev');
+                })
+            });
+        </script>        
+    </body>
+</html>
