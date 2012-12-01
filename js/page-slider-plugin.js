@@ -16,7 +16,7 @@
             this.css("overflow","hidden");
             $.extend( settings, options );
             return this.each(function(){
-                var panels = $(this.children).wrapAll('<div id="brentisinyourdom"/>');
+                var panels = $(this.children).wrapAll('<div/>');
                 wrapper = panels.parent();
                 pages=wrapper[0].children.length;
                 wrapper.css('position','relative');
